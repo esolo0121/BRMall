@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>后台登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../static/css/page-all.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="public-tittle">
+				<a href="resource-list.html" class="come-back fl"><i class="iconfont icon-fanhui01"></i></a>
+				<div class="r-box fl">
+					<p>权限资源管理-编辑权限</p>
+					<span>网站系统权限资源管理</span>
+				</div>
+			</div>
+			<div class="supplier-edit">
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">权限资源名称</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title1" autocomplete="off" placeholder="请输入权限资源名称" class="layui-input">
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">所属分组</label>
+						<div class="layui-input-inline resource-input">
+							<select>
+								<option value="1">系统设置</option>
+								<option value="2">系统设置</option>
+								<option value="3">系统设置</option>
+								<option value="4">系统设置</option>
+							</select>
+						</div>
+
+					</div>
+
+					<div class="add-resourse">
+						<div class="layui-form-item fl">
+							<label class="layui-form-label">添加权限码</label>
+							<div class="layui-input-inline resource-input">
+								<select>
+									<option value="1">Uploadify</option>
+									<option value="2">Trgu</option>
+									<option value="3">Trgu</option>
+									<option value="4">Trgu</option>
+								</select>
+							</div>
+						</div>
+						<p class="fl">@</p>
+						<div class="resourse-control fl">
+							<input type="checkbox" name="" lay-skin="primary" title="ininddexdex" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="indreggrgrgex" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhfhrffhrffhrffhrfrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhfhrffhrffhrffhrfrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="index" lay-filter="clickFilter">
+							<input type="checkbox" name="" lay-skin="primary" title="fhrf" lay-filter="clickFilter">
+						</div>
+						<div class="clearx"></div>
+
+					</div>
+					<div class="layui-form-item resource-lable">
+						<label class="layui-form-label">权限码管理</label>
+						<label class="layui-form-label resource-code">权限码</label>
+						<label class="layui-form-label">操作</label>
+					</div>
+					<!--添加盒子-->
+					<div class="resource-handle">
+
+					</div>
+					<div class="layui-form-item supplier-btn">
+						<button class="layui-btn" lay-submit="" lay-filter="demo2">确认提交</button>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+
+		<script typet="text/javascript" src="../static/layui/layui.js"></script>
+		<script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+		<script typet="text/javascript" src="../static/js/frame.js"></script>
+
+		<script>
+			layui.use(['form', 'layedit', 'laydate'], function() {
+				var form = layui.form(),
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate;
+
+				//创建一个编辑器
+				var editIndex = layedit.build('LAY_demo_editor');
+
+				//自定义验证规则
+				form.verify({
+					title1: function(value) {
+						if(value.length == 0) {
+							return '权限资源名称不能为空啊';
+						}
+					},
+
+				});
+				//input点击事件
+				$(".resourse-control").find(".layui-unselect").on("click", function() {
+
+					var text1 = $(this).parents(".add-resourse").find(".layui-this").text();
+					var text2 = $(this).find("span").text();
+					var index = ($(this).index() - 1) / 2;
+					var str = '<div class="handel-list" val="' + index + '"><input type="text" placeholder="' + text1 + '@' + text2 + '" class="layui-input fl"><button type="button" class="layui-btn layui-btn-danger fl"><i class="iconfont icon-delete"></i></button></div>'
+					if($(this).hasClass("layui-form-checked")) {
+						$(".resource-handle").append(str);
+
+					} else {
+						for(var i = 0; i < $(".handel-list").length; i++) {
+							var hl = $(".handel-list").eq(i).attr("val");
+							if(hl == index) {
+								$(".handel-list").eq(i).remove();
+							}
+
+						
+						}
+
+					}
+				})
+
+				//监听提交
+				form.on('submit(demo2)', function(data) {
+					layer.alert(JSON.stringify(data.field), {
+						title: '最终的提交信息'
+					})
+					return false;
+				});
+
+			});
+		</script>
+		<script typet="text/javascript" src="../static/js/page-all.js"></script>
+	</body>
+
+</html>

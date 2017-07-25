@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">
+	    <link href="../static/css/page-all.css" rel="stylesheet" type="text/css">
+	    <link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body>
+     
+		<div class="wrapper">
+			<div class="admin-center">
+				<div class="center-title">
+					管理中心
+				</div>
+				<div class="center-number">
+					 <div class="center-left fl">
+					 	<div class="number-list">
+					 		<i class="iconfont icon-dingdan fl"></i>
+					 		<div class="today-num fr">
+					 			<p>26</p>
+					 			<span>今日订单总数</span>
+					 		</div>
+					 	</div>
+					 </div>
+					  <div class="center-left fl">
+					 	<div class="number-list">
+					 		<i class="iconfont icon-huiyuan fl"></i>
+					 		<div class="today-num fr">
+					 			<p>26</p>
+					 			<span>今日订单总数</span>
+					 		</div>
+					 	</div>
+					 </div>
+				</div>
+			</div>
+		
+		</div>
+         
+	
+           <script typet="text/javascript" src="../static/layui/layui.js"></script>
+		   <script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+           <script typet="text/javascript" src="../static/js/frame.js"></script>
+	</body>
+
+</html>

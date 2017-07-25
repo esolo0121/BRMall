@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>后台登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../static/css/page-all.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+
+			<div class="public-tittle">
+				<a href="role-manage.html" class="come-back fl"><i class="iconfont icon-fanhui01"></i></a>
+				<div class="r-box fl">
+					<p>权限管理-管理角色</p>
+					<span>网站系统管理员列表</span>
+				</div>
+			</div>
+
+			<div class="role-add">
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">角色名称</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入角色名称" class="layui-input">
+						</div>
+					</div>
+
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">角色描述</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">权限分配</label>
+					</div>
+					<div class="layui-form role-table">
+
+						<table class="layui-table" lay-even="" lay-skin="nob">
+							<colgroup>
+								<col width="200">
+								<col width="200">
+								<col width="200">
+								<col width="200">
+								<col width="200">
+								<col width="200">
+							</colgroup>
+							<thead>
+								<tr class="all-chose">
+									<th style="padding-left: 73px;"><input type="checkbox" name="" lay-skin="primary" title="全选" lay-filter="allChoose"></th>
+
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告广告列表广告列表广告列表广告列表广告列表列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+								<tr class="tr-box">
+									<td class="whole-box"><span class="whole-choose">内容管理</span><input type="checkbox" name="" lay-skin="primary" title="全部" lay-filter="someChoose"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+									<td><input type="checkbox" name="" lay-skin="primary" title="广告列表"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="layui-form-item role-btn">
+						<button class="layui-btn" lay-submit="" lay-filter="demo2">确认提交</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+		<script typet="text/javascript" src="../static/layui/layui.js"></script>
+		<script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+
+		<script>
+			layui.use(['form', 'layedit', 'laydate'], function() {
+				var form = layui.form(),
+
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate;
+
+				//全选
+				form.on('checkbox(allChoose)', function(data) {
+					var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
+					child.each(function(index, item) {
+						item.checked = data.elem.checked;
+					});
+					form.render('checkbox');
+				});
+				//局部全选
+				form.on('checkbox(someChoose)', function(data) {
+
+					var child = $(data.elem).parents('.tr-box').find('td input[type="checkbox"]');
+					child.each(function(index, item) {
+						item.checked = data.elem.checked;
+					});
+					form.render('checkbox');
+				});
+
+				//创建一个编辑器
+				var editIndex = layedit.build('LAY_demo_editor');
+
+				//自定义验证规则
+				form.verify({
+					title: function(value) {
+						if(value.length < 5) {
+							return '标题至少得5个字符啊';
+						}
+					},
+					pass: [/(.+){6,12}$/, '密码必须6到12位'],
+					content: function(value) {
+						layedit.sync(editIndex);
+					},
+
+					required: function(value) {
+						if(value.length == 0) {
+							return '所属角色不能为空';
+						}
+					}
+
+				});
+
+				//监听提交
+				form.on('submit(demo1)', function(data) {
+					layer.alert(JSON.stringify(data.field), {
+						title: '最终的提交信息'
+					})
+					return false;
+				});
+				//高度
+
+				for(var i = 0; i < $(".tr-box").length; i++) {
+					var h = $(".tr-box").eq(i).height();
+					$(".whole-box").eq(i).height(h);
+				}
+
+			});
+		</script>
+
+	</body>
+
+</html>

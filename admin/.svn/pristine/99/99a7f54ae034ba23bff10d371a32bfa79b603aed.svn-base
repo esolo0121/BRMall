@@ -1,0 +1,514 @@
+/*编辑管理员*/
+
+.admin-edit {
+	margin: 100px 0 0 200px;
+}
+
+.admin-edit .layui-form-label {
+	color: #666;
+}
+
+.admin-edit .layui-input {
+	width: 212px;
+}
+
+.admin-edit .layui-btn {
+	margin: 30px 0 0 110px;
+}
+
+
+/*添加角色*/
+
+.role-add {
+	margin-bottom: 200px;
+}
+
+.role-add .layui-input {
+	width: 400px;
+}
+
+.role-add .layui-textarea {
+	width: 600px;
+	height: 200px;
+	resize: none;
+	overflow-y: auto;
+}
+
+.whole-choose {
+	float: left;
+	color: #666;
+	font: 12px/20px "微软雅黑";
+	margin-right: 10px;
+}
+
+.role-table tbody {
+	display: block;
+}
+
+.tr-box {
+	overflow: hidden;
+}
+
+.tr-box td {
+	float: left;
+}
+
+.role-add .layui-form-item {
+	margin: 20px 0 0 18px;
+}
+
+.role-table {
+	margin-left: 130px;
+}
+
+.role-btn {
+	margin: 40px 0 0 130px !important;
+}
+
+
+/*供应商管理*/
+
+.supplier-edit {
+	margin: 100px 0 0 200px;
+}
+
+.supplier-edit .layui-input{
+	width: 440px;
+}
+
+.supplier-edit .layui-form-label {
+	color: #666;
+	width: 84px;
+}
+
+.supplier-edit .supplier-btn {
+	margin: 30px 0 0 114px;
+}
+
+
+/*权限资源管理*/
+
+.resource-input .layui-input {
+	width: 190px !important;
+}
+
+.add-resourse p {
+	color: #666;
+	font: 14px/38px "微软雅黑";
+}
+
+.resourse-control {
+	border-left: 1px dashed #e6e6e6;
+	padding: 10px;
+	width: 75%;
+	margin-left: 10px;
+}
+
+.resourse-control .layui-form-checkbox {
+	float: left;
+	margin-bottom: 15px;
+	width: 150px;
+}
+
+.resourse-control .layui-form-checkbox span {
+	position: absolute;
+	left: 15px;
+}
+
+.resource-lable {
+	margin-top: 90px;
+	border-bottom: 1px dashed #e6e6e6;
+}
+
+.resource-code {
+	text-align: left;
+	padding-left: 4px;
+	margin-right: 290px
+}
+
+.handel-list {
+	overflow: hidden;
+}
+
+.handel-list .layui-input {
+	margin: 0 10px 10px 116px;
+}
+
+
+/*管理中心*/
+
+.center-title {
+	font: 18px/60px "微软雅黑";
+	height: 60px;
+	color: #343434;
+	border-bottom: solid 1px #E6E6E6;
+}
+
+.center-left {
+	width: 40%;
+}
+
+.number-list {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 83px 38px 38px;
+	background: #009688;
+	color: #fff;
+	overflow: hidden;
+	width: 35%;
+}
+
+.number-list i {
+	font: 80px/80px "微软雅黑";
+}
+
+.center-right {
+	width: 60%;
+}
+
+.today-num {
+	text-align: center;
+}
+
+.today-num p {
+	font: 30px/60px "微软雅黑";
+}
+
+.center-number {
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.amount-top {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.amount-list {
+	float: left;
+	text-align: center;
+	width: 9%;
+	background: #fff;
+	padding: 25px 10px;
+	margin-right: 20px;
+}
+
+.amount-list i {
+	display: block;
+	font: 30px/50px "微软雅黑";
+	background: #5FB878;
+	width: 50%;
+	color: #fff;
+	margin: 0 auto;
+}
+
+.amount-list p {
+	margin-top: 10px;
+	color: #707070;
+}
+
+.amount-list span {
+	color: #FF5722;
+	font: 700 14px/30px "微软雅黑";
+}
+
+.overview-table .first {
+	font-weight: 700;
+}
+
+.amount-bottom {
+	background: #fff;
+	padding: 14px 25px;
+}
+
+.table-headline span {
+	font: 700 16px/32px "微软雅黑";
+}
+
+.table-headline i {
+	float: left;
+	font: 26px/30px "微软雅黑";
+	color: #83CB37;
+}
+
+.table-headline .iconfont {
+	margin: 2px 5px 0 0;
+}
+
+.overview-table table tbody tr td {
+	color: #666;
+	padding: 10px 34px;
+}
+
+.overview-table table tbody tr td a {
+	color: #31b4e1;
+}
+
+.top-box {
+	overflow: hidden;
+}
+
+.bottom-box .table-headline .icon-shezhi {
+	font: 24px/30px "微软雅黑";
+}
+
+.pub-bg {
+	background: #F7F7F7;
+}
+
+.foot-p {
+	text-align: center;
+	margin: 100px 0 10px;
+}
+
+
+/*商城设置商城信息*/
+
+.mall-message .public-box {
+	overflow: hidden;
+}
+
+.mall-message .layui-tab {
+	margin: 6px 0px 0 -1px;
+	width: 90%;
+}
+
+.mall-message .public-tittle {
+	width: 10%;
+}
+
+.mall-message .layui-tab-title .layui-this {
+	background: #fff;
+}
+
+.mall-message .layui-tab-title li {
+	background: #E6E6E6;
+	margin-right: 5px;
+}
+
+.mall-message .layui-tab-title li a {
+	color: #666;
+}
+
+.mall-input {
+	padding-top: 30px;
+}
+
+.mall-input .layui-input {
+	width: 416px;
+}
+
+.mall-input .layui-input:hover {
+	border: 1px solid #009688 !important;
+}
+
+.mall-input .layui-form-label {
+	width: 300px;
+	color: #666;
+	margin-right: 30px;
+}
+
+.explain-p {
+	font: 12px/30px "微软雅黑";
+	color: #666;
+	padding-left: 250px;
+}
+
+.explain-p:hover {
+	color: #009688;
+}
+
+.mall-input .layui-form-item {
+	padding: 0px 0 10px 100px;
+	border-bottom: solid 1px #E6E6E6;
+}
+
+.mall-input .layui-upload-button {
+	position: absolute;
+	top: 0px;
+	left: 553px;
+	background: #E6E6E6;
+}
+
+.mall-input .layui-upload-button:hover {
+	background: #009688;
+	color: #fff;
+}
+
+.mall-input .layui-inline {
+	margin: 50px 0;
+	left: 464px;
+}
+
+
+/*基本设置*/
+
+.pub-seclect .layui-input {
+	width: 100% !important;
+}
+
+
+/*邮箱设置*/
+
+.test-box .layui-input {
+	display: inline-block;
+}
+
+
+/*水印设置*/
+
+.input-length {
+	width: 260px;
+}
+
+.water-size .layui-input {
+	width: 200px;
+}
+
+.water-height{
+	margin-left: 250px;
+}
+
+.water-quality .layui-table {
+	width: 30%;
+}
+
+
+/*地区设置*/
+.area-form .site-demo-button{
+	position: relative;
+}
+.area-form .icon-sanjiao-copy2{
+	top: 10px;
+	position: absolute;
+	left: 126px;
+	display: none;
+	
+}
+
+.area-form .icon-sanjiao{
+	top: 10px;
+	position: absolute;
+	left: 126px;
+}
+
+
+.area-form .area-btn{
+	padding-right: 25px;
+}
+
+
+
+
+.levels-box{
+	display: none;
+	left: 148px;
+    top: 9px;
+    z-index: 1000;	
+}
+
+.area-form .levels-box a{
+	display: block;	
+	margin-left: 0;
+	height: 28px;
+	font: 14px/28px "微软雅黑";
+	
+}
+
+.area-form .levels-box button a{
+	color: #fff;
+}
+/*地区设置*/
+
+.higher-place{
+	line-height: 36px;
+}
+
+.higher-place span{
+	color: #f36;
+    font: 700 12px/36px "微软雅黑";
+    padding-right: 10px;
+}
+
+
+.pub-textera{
+	width: 600px;
+	resize: none;
+    overflow-y: auto;
+}
+/*导航列表管理*/
+.nav-tb .icon-search{
+	line-height: 30px;
+}
+
+/*会员管理*/
+.sort{
+	color: #005aa0;	
+}
+.sort:hover{
+	color: #f36;
+}
+.current-sort{
+	color: #f36;
+}
+
+.first-down{
+	color: #005aa0;
+}
+
+.first-down:hover{
+	color: #f36;
+	text-decoration:underline;
+}
+
+
+/*会员管理弹框*/
+.pm-box{
+	display: none;
+}
+
+.pm-box .layui-form-label{
+	width: 80px;
+}
+
+.pm-box .pub-textera{
+	width: 400px;
+}
+
+.pm-box .layui-inline{
+	left:242px;
+	top: -30px;
+}
+
+.pm-box .layui-table{
+	width: 60%;
+}
+
+
+.member-table .layui-table{
+	width: 38%;
+}
+
+/*资金调节*/
+.adjust-money .layui-form-select{
+
+	height: 38px;
+}
+.adjust-money .layui-form-select .layui-input{
+	width: 100px;
+}
+.adjust-money .layui-form-select .layui-anim-upbit{
+	min-width: 100px !important;
+	left: 250px;
+}
+
+.adjust-money .layui-form-select .layui-edge{
+	   left: 327px;
+}
+
+.adjust-money .adjust-input{
+position: absolute;
+top: 0px;
+left: 354px;
+}

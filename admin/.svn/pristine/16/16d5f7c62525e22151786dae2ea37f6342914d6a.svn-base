@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>后台登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../static/css/page-all.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="public-box">
+				<div class="public-tittle">
+					<p>会员管理</p>
+					<span>网站系统会员索引与管理</span>
+				</div>
+				<div class="public-tip">
+					<a href="javascript:void(0);" class="tip-tittle"><i class="iconfont icon-caozuo"></i>操作提示</a>
+					<div class="tip-list">
+						<p><span>▶</span>点击查看操作将显示订单（包括订单物品）的详细信息细信息</p>
+						<p><span>▶</span>点击查看操作将显示订单（包括订单物品）的详细信息</p>
+						<p><span>▶</span>点击查看操作将显示订单（包括订单物品）的详细信息</p>
+					</div>
+				</div>
+			</div>
+			<div class="main-tittle">
+				<div class="tittle-left fl">
+					<span>权限资源列表</span>
+					<u>(共677条记录)</u>
+					<i class="iconfont icon-shuaxin"></i>
+				</div>
+				<div class="tittle-right fr">
+					<div class="search-pubox">
+						<input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="手机号或者邮箱..." class="layui-input fl">
+						<button class="layui-btn fr">搜索</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-box">
+				<a href="member-edit.html" class="edit-btn"><i class="iconfont icon-tianjia"></i>新增数据</a>
+
+				<a href="javascript:void(0);" data-method="notice" class="edit-btn"><i class="iconfont icon-tianjia"></i>发送站内信</a>
+				<a href="javascript:void(0);" class="edit-btn" data-method="sendEmail"><i class="iconfont icon-tianjia"></i>发送邮件</a>
+
+				<div class="layui-form area-form">
+
+					<table class="layui-table" lay-even="" lay-skin="row">
+						<colgroup>
+							<col width="50">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="150">
+							<col width="250">
+							<col width="150">
+							<col width="300">
+						</colgroup>
+						<thead>
+
+							<tr class="head-t sort-a">
+								<th><input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose"></th>
+								<th>
+									<a href="javascript:void(0);" class="sort current-sort">ID<i class="iconfont icon-paixu"></i></a>
+								</th>
+								<th><a href="javascript:void(0);" class="sort">会员昵称<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th><a href="javascript:void(0);" class="sort">地区<i class="iconfont icon-paixu"></a></th>
+								<th>一级下线数（点击查看）</th>
+								<th>二级下线数</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody class="tb-a">
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>1</td>
+								<td>900460</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td><a href="javascript:void(0);" class="first-down">1</a></td>
+								<td>贤心</td>
+							
+							
+								<td class="site-demo-button">
+                                      
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+										<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+										<div class="levels-box pa">
+										    <a href="member-message.html" class="layui-btn layui-btn-warm">查看编辑</a>
+										    <a href="member-record.html" class="layui-btn layui-btn-warm">充值记录</a>
+										    <a href="member-money.html" class="layui-btn layui-btn-warm">用户资金</a>
+										    <a href="member-message.html" class="layui-btn layui-btn-warm">线下支付</a>
+										    <a href="member-message.html" class="layui-btn layui-btn-warm">用户订单</a>
+										    <a href="member-message.html" class="layui-btn layui-btn-warm">收货地址</a>
+										    <a href="member-message.html" class="layui-btn layui-btn-warm">资金明细</a>									
+										</div>
+										</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>2</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="" lay-skin="primary"></td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td></td>
+								<td>1989-10-14</td>
+								<td>贤心</td>
+								<td>汉族</td>
+								<td>汉族</td>
+								<td>
+									<a href="javascript:void(0);" class="first-down">1</a>
+								</td>
+								<td>贤心</td>
+
+								<td class="site-demo-button">
+
+									<button data-method="offset" data-type="auto" class="layui-btn lay-change layui-btn-danger"><i class="iconfont icon-delete"></i></button>
+									<button class="layui-btn lay-change area-btn">
+										<i class="iconfont icon-shezhi"></i>
+										设置
+										<i class="iconfont icon-sanjiao"></i>
+										<i class="iconfont icon-sanjiao-copy2"></i>										
+									</button>
+									<div class="levels-box pa">
+										<button class="layui-btn layui-btn-warm"><a href="member-message.html">查看编辑</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">充值记录</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">线下支付</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">用户订单</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">收货地址</a></button>
+										<button class="layui-btn layui-btn-warm"><a href="#">资金明细</a></button>
+									</div>
+								</td>
+							</tr>
+
+							</tbody>
+					</table>
+					<div id="paging" style="text-align: center;"></div>
+				</div>
+
+			</div>
+			<!--弹出层发送站内短信-->
+			<div class="mall-input pm-box">
+				<div class="layui-form">
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">会员类型</label>
+						<div class="layui-input-block">
+							<input type="radio" name="ejeh" value="发送给以下会员" title="发送给以下会员" checked="checked">
+							<input type="radio" name="ejeh" value="发送给全部会员" title="发送给全部会员">
+
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">会员列表</label>
+
+						<div class="layui-input-block">
+							<table class="layui-table" lay-even="" lay-skin="row">
+								<colgroup>
+
+									<col width="200">
+									<col width="400">
+								</colgroup>
+								<thead>
+									<tr class="head-t">
+										<th>ID</th>
+										<th>会员昵称</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>1989-10-14</td>
+									</tr>
+
+									<tr>
+										<td>555555555555555</td>
+										<td>1989-10-14防守打法规定规范地方郭德纲</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="layui-form-item">
+						<label class="layui-form-label">短信内容</label>
+						<div class="layui-input-block">
+							<textarea placeholder="请输入内容" class="layui-textarea pub-textera" name="shortMessage" lay-verify="shortMessage"></textarea>
+						</div>
+					</div>
+
+					<div class="layui-inline">
+						<button class="layui-btn" lay-submit="" lay-filter="demo1">确认提交</button>
+					</div>
+				</div>
+
+			</div>
+
+			<!--弹出层发送邮件-->
+			<div class="mall-input pm-box">
+				<div class="layui-form">
+
+					<form class="layui-form" action="">
+						<div class="layui-form-item">
+							<label class="layui-form-label">会员类型</label>
+							<div class="layui-input-block">
+								<input type="radio" name="ejeh" value="发送给以下会员" title="发送给以下会员" checked="checked">
+								<input type="radio" name="ejeh" value="发送给全部会员" title="发送给全部会员">
+							</div>
+						</div>
+
+						<div class="layui-form-item">
+							<label class="layui-form-label">会员列表</label>
+
+							<div class="layui-input-block">
+								<table class="layui-table" lay-even="" lay-skin="row">
+									<colgroup>
+
+										<col width="200">
+										<col width="400">
+									</colgroup>
+									<thead>
+										<tr class="head-t">
+											<th>ID</th>
+											<th>会员昵称</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>1989-10-14</td>
+										</tr>
+
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+										<tr>
+											<td>555555555555555</td>
+											<td>1989-10-14防守打法规定规范地方郭德纲</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="layui-form-item">
+							<label class="layui-form-label">邮件标题</label>
+							<div class="layui-input-block">
+								<input type="text" name="emailTittle" lay-verify="emailTittle" autocomplete="off" value="" class="layui-input">
+							</div>
+						</div>
+
+						<div class="layui-form-item">
+							<label class="layui-form-label">短信内容</label>
+							<div class="layui-input-block">
+								<textarea placeholder="请输入内容" class="layui-textarea pub-textera" name="mailContent" lay-verify="mailContent"></textarea>
+							</div>
+						</div>
+
+						<div class="layui-inline">
+							<button class="layui-btn" lay-filter="demo2">确认提交</button>
+						</div>
+				</div>
+				</form>
+
+			</div>
+
+		</div>
+
+		<script typet="text/javascript" src="../static/layui/layui.js"></script>
+		<script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+		<script typet="text/javascript" src="../static/js/page-all.js"></script>
+	
+
+		<script>
+			layui.use(['laypage', 'layer', 'form'], function() {
+				var laypage = layui.laypage,
+					$ = layui.jquery,
+					form = layui.form(),
+					layer = layui.layer;
+				//分页
+				laypage({
+					cont: 'paging',
+					pages: 100,
+					curr: location.hash.replace('#!fenye=', ''), //获取hash值为fenye的当前页						
+					hash: 'fenye' //自定义hash值
+				});
+
+				//全选
+				form.on('checkbox(allChoose)', function(data) {
+					var child = $(data.elem).parents('table').find('tbody input[type="checkbox"]');
+					child.each(function(index, item) {
+						item.checked = data.elem.checked;
+					});
+					form.render('checkbox');
+				});
+
+				//自定义验证规则
+				form.verify({
+					shortMessage: function(value) {
+						if(value.length < 1) {
+							return '短信内容不能为空啊';
+						}
+					},
+					//邮件标题
+					emailTittle: function(value) {
+
+						if(value.length < 1) {
+							return '邮件标题不能为空啊';
+						}
+					},
+					//邮件内容
+
+					mailContent: function(value) {
+
+						if(value.length < 1) {
+							return '邮件内容不能为空啊';
+						}
+					},
+					pass: [/(.+){6,12}$/, '密码必须6到12位'],
+					content: function(value) {
+						layedit.sync(editIndex);
+					},
+
+					required: function(value) {
+						if(value.length == 0) {
+							return '所属角色不能为空';
+						}
+					}
+
+				});
+				//监听提交
+				form.on('submit(demo1)', function(data) {
+					layer.alert(JSON.stringify(data.field), {
+						title: '最终的提交信息1'
+					})
+					return false;
+				});
+
+				//监听提交
+				form.on('submit(demo2)', function(data) {
+
+					layer.alert(JSON.stringify(data.field), {
+						title: '最终的提交信息2'
+					})
+
+					return false;
+				});
+				//触发事件
+				var con = '<div style="padding:20px 180px 20px 20px; text-align：left;">确认删除？ </div>';
+				var active = {
+
+					offset: function(othis) {
+						var type = othis.data('type'),
+							text = othis.text();
+
+						layer.open({
+							type: 1,
+							offset: type //具体配置参考：http://www.layui.com/doc/modules/layer.html#offset
+								,
+							id: 'LAY_demo' + type //防止重复弹出
+								,
+							content: '<div style="padding:20px 180px 20px 20px;wi text-align：left;">确认删除？ </div>',
+							btn: ['确定', '取消'],
+							btnAlign: 'c' //按钮居中
+								,
+							shade: 0.5 //不显示遮罩
+								,
+							yes: function() {
+								layer.closeAll();
+							}
+						});
+					},
+                   
+                    	
+                    
+					notice: function() {
+					if(!$(".tb-a").find(".layui-form-checkbox").hasClass('layui-form-checked')){
+						
+					layer.msg('请选择会员', {time:2000, shift: 6,icon: 5},function(){});
+						
+					}else{
+						
+						layer.open({
+							type: 1,
+							shade: 0.5,
+							area: '800px',
+							title: '发送站内短信',
+							content: $('.pm-box').eq(0),
+
+						});
+					}
+                     
+						
+					},
+					sendEmail: function() {
+					if(!$(".tb-a").find(".layui-form-checkbox").hasClass('layui-form-checked')){
+						
+					layer.msg('请选择会员', {time:2000, shift: 6,icon: 5},function(){});
+						
+					}else{
+						
+						layer.open({
+							type: 1,
+							shade: 0.5,
+							area:'800px', 
+							title: '发送站内短信',
+							content: $('.pm-box').eq(1),
+
+						});
+					}
+                     
+						
+					},
+
+					
+
+				};
+
+				$('.site-demo-button .layui-btn').on('click', function() {
+					var othis = $(this),
+						method = othis.data('method');
+					active[method] ? active[method].call(this, othis) : '';
+				});
+
+				$('.form-box .edit-btn').on('click', function() {
+
+					var othis = $(this),
+						method = othis.data('method');
+					active[method] ? active[method].call(this, othis) : '';
+				});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,174 @@
+/*编辑管理员*/
+.admin-edit{
+	margin: 100px 0 0 200px;
+}
+
+
+.admin-edit .layui-form-label{
+	color: #666;
+}
+.admin-edit .layui-input{
+	width: 212px;
+	padding-right: 10px;
+}
+
+
+.admin-edit .layui-btn{
+	margin: 30px 0 0 110px;
+}
+
+/*添加角色*/
+
+.role-add {
+	margin-bottom: 200px;
+}
+.role-add .layui-input{
+	width: 400px;
+}
+
+
+.role-add .layui-textarea{
+	width: 600px;
+	height: 200px;
+	resize: none;
+    overflow-y: auto;
+	
+}
+
+.whole-choose{
+	float: left;
+	color: #666;
+	font: 12px/20px "微软雅黑";
+	margin-right: 10px;
+}
+
+.role-table table,tbody{
+	display: block;
+}
+
+.tr-box{
+	overflow: hidden;
+}
+.tr-box td{
+  float: left;
+}
+
+
+
+.role-add .layui-form-item{
+	margin: 20px 0 0 18px;
+}
+
+.role-table{
+	margin-left: 130px;
+}
+
+.role-btn{
+	margin: 40px 0 0 130px !important;
+}
+
+/*供应商管理*/
+.supplier-edit{
+	margin: 100px 0 0 200px;
+}
+.supplier-edit .layui-input{
+	width: 440px;
+}
+
+.supplier-edit .layui-form-label {
+    color: #666;
+    width: 84px;
+}
+
+.supplier-edit .supplier-btn{
+	    margin: 30px 0 0 114px;
+	   
+}
+
+/*权限资源管理*/
+
+.resource-input .layui-input{
+	width: 190px !important;
+}
+
+
+
+.add-resourse p{
+	color: #666;
+	font: 14px/38px "微软雅黑";
+}
+
+.resourse-control{
+	border-left:1px dashed #e6e6e6;
+	padding: 10px;
+	
+	width: 75%;
+	margin-left: 10px;
+}
+
+
+.resourse-control .layui-form-checkbox{
+	float: left;
+	margin-bottom:15px;
+	width: 150px;
+}
+
+
+.resourse-control .layui-form-checkbox span{
+	position: absolute;
+	left: 15px;
+}
+
+
+.resource-lable{
+	margin-top: 90px;
+	border-bottom:1px dashed #e6e6e6 ;
+}
+
+.resource-code{
+	text-align: left;
+	padding-left: 4px;
+	margin-right: 290px
+}
+
+.handel-list{
+	overflow: hidden;
+}
+.handel-list .layui-input{
+	
+	    margin: 0 10px 10px 116px;
+}
+
+
+/*管理中心*/
+.center-title{
+	font: 18px/60px "微软雅黑";
+	height: 60px;
+	color: #343434;
+	border-bottom: solid 1px #E6E6E6;
+}
+
+
+.number-list{
+	    margin-right: 16px;
+	    padding: 83px 38px 38px;
+	    background:#009688;
+	    color: #fff;
+	    overflow: hidden;
+	    margin-right: 16px;
+}
+
+
+.number-list i{
+	font: 80px/80px "微软雅黑";
+	margin-right: 100px;
+	
+}
+
+.today-num{
+	text-align: center;
+}
+.today-num p{
+	font: 30px/60px "微软雅黑";
+	
+}

@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>鋆泽惠后台2.0</title>
+
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/frame.css" rel="stylesheet" type="text/css">
+		<link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+		<!--[if lte IE 8]>
+		 	<style>
+			.now-alert {
+			    filter:alpha(opacity=40);
+				background-color: #666;
+			}					
+		</style>
+		     
+       <![endif]-->
+
+	</head>
+
+	<body>
+		<div class="admin-box">
+
+			<div class="admin-header">
+				<a href="javascript:void(0);" class="logo-img fl">
+					<img src="../static/images/logo.png" />
+				</a>
+				<a href="javascript:void(0);" title="展开/收起侧边导航" class="nav-a fl">
+
+				</a>
+				<div class="system-box fl">
+					<a href="javascript:void(0);" class="system-tittle">系统</a>
+					<span></span>
+					<a href="javascript:void(0);" class="system-tittle">商城</a>
+					<span></span>
+					<a href="javascript:void(0);" class="system-tittle">插件</a>
+					<span></span>
+					<a href="javascript:void(0);" class="system-tittle">APP管理</a>
+				</div>
+				<div class="fr-box fr" style="overflow: hidden;">
+					<div class="edition fl">
+						<p>鋆泽惠后台2.0</p>
+						<p>HTML5框架测试版</p>
+					</div>
+					<div class="admin fl">
+						<p>admin</p>
+						<p>管理员</p>
+					</div>
+					<i class="iconfont icon-guanliyuan"></i>
+					<div class="drop-down fl">
+						<a href="javascript:void(0);" title="快捷管理" class="hide-a">
+							<i class="iconfont icon-sanjiao"></i>
+							<i class="iconfont icon-sanjiao-copy1"></i>
+						</a>
+
+					</div>
+					<a href="javascript:void(0);" title="新窗口打开商城首页" class="close-a fl">
+						<i class="iconfont icon-shouye_shouye"></i>
+					</a>
+					<a href="javascript:void(0);" title="安全退出管理中心" class="close-a fl">
+						<i class="iconfont icon-guanbi"></i>
+					</a>
+				</div>
+			</div>
+			<div class="show-box">
+				<!--左边第一个边框-->
+				<div class="left-first">
+					<div class="stand-list">
+						<a href="javascript:void(0);" class="stand-a add-bg">
+							<div class="stand-name">
+								<i class="iconfont icon-yulan"></i>
+							</div>
+
+							<p>概览</p>
+							<i class="iconfont icon-sanjiao-copy first"></i>
+						</a>
+					</div>
+					<!--系统-->
+					<div class="stand-list" style="display: none;">
+						<a href="javascript:void(0);" class="stand-a add-bg">
+							<div class="stand-name">
+								<i class="iconfont icon-shezhi"></i>
+							</div>
+							<p>设置</p>
+							<i class="iconfont icon-sanjiao-copy first"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-huiyuan"></i>
+							</div>
+							<p>会员</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-guanggao"></i>
+							</div>
+							<p>广告</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-wenzhang"></i>
+							</div>
+							<p>文章</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-quanxian"></i>
+							</div>
+							<p>权限</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-moban"></i>
+							</div>
+							<p>模板</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-iconfontpaixingbang"></i>
+							</div>
+							<p>数据</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+
+					</div>
+
+					<!--商城-->
+					<div class="stand-list" style="display: none;">
+						<a href="javascript:void(0);" class="stand-a add-bg">
+							<div class="stand-name">
+								<i class="iconfont icon-shangpin"></i>
+							</div>
+							<p>商品</p>
+							<i class="iconfont icon-sanjiao-copy first"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-shangjia"></i>
+							</div>
+							<p>商家</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-dingdan"></i>
+							</div>
+							<p>订单</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-cuxiao"></i>
+							</div>
+							<p>促销</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-quanminfenxiao"></i>
+							</div>
+							<p>分销</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-weixin"></i>
+							</div>
+							<p>微信</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-yunying"></i>
+							</div>
+							<p>运营</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-tongji"></i>
+							</div>
+							<p>统计</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-iconfont"></i>
+							</div>
+							<p>积分</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+
+					</div>
+					<!--插件-->
+					<div class="stand-list" style="display: none;">
+						<a href="javascript:void(0);" class="stand-a add-bg">
+							<div class="stand-name">
+								<i class="iconfont icon-yunfuwu"></i>
+							</div>
+
+							<p>云服务</p>
+							<i class="iconfont icon-sanjiao-copy first"></i>
+						</a>
+					</div>
+					<!--App管理-->
+					<div class="stand-list" style="display: none;">
+						<a href="javascript:void(0);" class="stand-a add-bg">
+							<div class="stand-name">
+								<i class="iconfont icon-fenlei-copy"></i>
+							</div>
+							<p>分类</p>
+							<i class="iconfont icon-sanjiao-copy first"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-guanggao"></i>
+							</div>
+							<p>手机广告</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-tuisong"></i>
+							</div>
+							<p>推送</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-zhifu"></i>
+							</div>
+							<p>支付</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-chengshi"></i>
+							</div>
+							<p>商城</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-faxian"></i>
+							</div>
+							<p>发现</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-bangzhuzhongxin"></i>
+							</div>
+							<p>帮助中心</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+						<a href="javascript:void(0);" class="stand-a">
+							<div class="stand-name">
+								<i class="iconfont icon-fankui"></i>
+							</div>
+							<p>反馈</p>
+							<i class="iconfont icon-sanjiao-copy"></i>
+
+						</a>
+
+					</div>
+
+				</div>
+				<!--左边第二个边框-->
+				<div class="left-second">
+
+					<!--系统后台logo-->
+					<div class="five-box">
+						<div class="second-list" style="-display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•系统后台
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+						</div>
+					</div>
+					<!--系统-->
+					<div class="five-box" style="display: none;">
+						<div class="second-list" style="-display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商城设置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•地区&配送
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•短信配置模板
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•自定义导航栏
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•友情链接
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•清除缓存
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•会员列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•会员等级
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•充值记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•实名认证
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•广告列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•广告位置
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•文章列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•文章分类
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•专题列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•管理员列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•角色管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•权限资源列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•管理员日志
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•供应商列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•模板设置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•数据备份
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•数据恢复
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+					<!--商城-->
+					<div class="five-box" style="display: none;">
+						<div class="second-list" style="-display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商品分类
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商品列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•库存日志
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商品模型
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商品规格
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•品牌列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•店铺列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•店铺等级
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•店铺分类
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•自营店铺
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•经营类目审核
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•订单列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•虚拟订单
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•支付订单
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•退货退款
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•订单日志
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商品评论
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商品咨询
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•投诉管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•举报管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•抢购管理
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•团购管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•优惠促销
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•订单促销
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•店铺优惠券
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•品牌团
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•分销商列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•用户分销关系
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商户分销关系
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•用户分成记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商户分成记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•分成记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•分成统计
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•公众号配置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•微信菜单管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•文本回复
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商家提现申请
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商家转款列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•会员提现申请
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•会员转款列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•商家结算记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•平台支出记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•资金调节记录
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•销售概况
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•销售排行
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•会员排行
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•销售明细
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•会员统计
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•运营概览
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•销售明细
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•申请列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+					<!--插件-->
+					<div class="five-box" style="display: none;">
+						<div class="second-list" style="-display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•插件库
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•数据备份
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•数据还原
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商城设置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•地区&配送
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•商城设置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•地区&配送
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+					<!--APP管理-->
+					<div class="five-box" style="display: none;">
+						<div class="second-list" style="-display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•APP商品分类
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•广告列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•广告位置
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•进口商品
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•团购管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•秒杀管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•意见反馈
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•站内信息推送
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•友盟推送分类
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•支付宝支付
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•微信支付
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•基础配置
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•分页配置
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•提现配置
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•发现管理
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•帮助列表
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•分类列表
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•用户反馈管理
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+							<a href="javascript:void(0);" class="word-a">
+								•用户举报管理
+								<i class="iconfont icon-sanjiao-copy"></i>
+							</a>
+
+						</div>
+						<div class="second-list" style="display: none;">
+							<a href="javascript:void(0);" class="word-a word-bg">
+								•android版本管理
+								<i class="iconfont icon-sanjiao-copy first"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--隐藏边框-->
+			<div class="hide-box">
+				<div class="hide-list">
+					<div class="hide-icon">
+						<i class="iconfont icon-yulan"></i>
+
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">概览</a>
+							<a href="javascript:void(0);" class="hide-name">系统后台</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!--系统-->
+				<div class="hide-list" style="display: none;">
+
+					<div class="hide-icon">
+						<i class="iconfont icon-shezhi"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">设置</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-huiyuan"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">会员</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-guanggao"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">广告</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-wenzhang"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">文章</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-quanxian"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">权限</a>
+							<a href="javascript:void(0);" class="hide-name">管理员列表</a>
+							<a href="javascript:void(0);" class="hide-name">角色管理</a>
+							<a href="javascript:void(0);" class="hide-name">权限资源列表</a>
+							<a href="javascript:void(0);" class="hide-name">管理员日志</a>
+							<a href="javascript:void(0);" class="hide-name">供应商列表</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-moban"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">模板</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-iconfontpaixingbang"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">数据</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+				</div>
+
+				<!--商城-->
+				<div class="hide-list" style="display: none;">
+
+					<div class="hide-icon">
+						<i class="iconfont icon-shangpin"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">商品</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-shangjia"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">商家</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-dingdan"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">订单</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-cuxiao"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">促销</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-quanminfenxiao"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">分销</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-weixin"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">微信</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-yunying"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">运营</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-tongji"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">统计</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-iconfont"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">积分</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+				</div>
+
+				<!--插件-->
+				<div class="hide-list" style="display: none;">
+					<div class="hide-icon">
+						<i class="iconfont icon-yunfuwu"></i>
+
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">云服务</a>
+							<a href="javascript:void(0);" class="hide-name">系统后台</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!--App管理-->
+				<div class="hide-list" style="display: none;">
+
+					<div class="hide-icon">
+						<i class="iconfont icon-fenlei-copy"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">分类</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-guanggao"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">手机广告</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-tuisong"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">推送</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-zhifu"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">支付</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-chengshi"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">商城</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">短信模板</a>
+							<a href="javascript:void(0);" class="hide-name">自定义导航栏</a>
+							<a href="javascript:void(0);" class="hide-name">友情链接</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-faxian"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">发现</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-bangzhuzhongxin"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">帮助中心</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+					<div class="hide-icon">
+						<i class="iconfont icon-fankui"></i>
+						<div class="hide-right">
+							<a href="javascript:void(0);" class="hide-name add-bg">反馈</a>
+							<a href="javascript:void(0);" class="hide-name">商城设置</a>
+							<a href="javascript:void(0);" class="hide-name">地区&配送</a>
+							<a href="javascript:void(0);" class="hide-name">清除缓存</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--状态管理-->
+		<div class="quick-manage">
+			<div class="quick-tittle">
+				<span>最后登录</span>
+				<a href="javascript:void(0);">修改密码</a>
+			</div>
+			<p class="time">2017-03-08 9:00</p>
+			<p class="ip">(IP:1.92.30.4)</p>
+		</div>
+
+		<!--修改密码-->
+		<!--弹窗-->
+		<div class="now-alert">
+			<div class="change-box">
+				<div class="change-tittle">
+					修改密码
+				</div>
+				<div class="change-main">
+					<form class="form-margin">
+						<div class="login-list">
+							<p class="message-tip regist-tip"></p>
+							<p class="in-box"><span><u>*</u>原密码</span><input type="password" placeholder="请输入原密码" class="regist-in" /></p>
+
+						</div>
+						<div class="login-list">
+							<p class="message-tip regist-tip"></p>
+							<p class="in-box"><span><u>*</u>新密码</span><input type="password" placeholder="请输入新密码" class="regist-in" /></p>
+						</div>
+
+						<div class="login-list">
+							<p class="message-tip regist-tip"></p>
+							<p class="in-box"><span><u>*</u>确认密码</span><input type="password" placeholder="请确认密码" class="regist-in" /></p>
+
+						</div>
+						<div class="change-bottom">
+							<a href="javascript:void(0);" class="confirm">确认</a>
+							<a href="javascript:void(0);" class="cancel">取消</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			<iframe src="../overview/overview.html" width=100% height=100% marginwidth="0" marginheight="0" frameborder="0" style="overflow: visible !important;" id="ifra">
+	
+   			 </iframe>
+		</div>
+		<script typet="text/javascript" src="../static/layui/layui.js"></script>
+		<script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+		<script typet="text/javascript" src="../static/js/frame.js"></script>
+		<script typet="text/javascript" src="../static/js/location.js"></script>
+	</body>
+
+</html>

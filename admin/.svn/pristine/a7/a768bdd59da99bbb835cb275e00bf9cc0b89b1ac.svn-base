@@ -1,0 +1,71 @@
+
+
+
+ 
+
+//var w = ($(document).width()-40)*0.87;
+
+var w = $(".page").width();
+
+var sLit =$(".stand-list");
+//隐藏列表
+var hLit =$(".hide-list");
+$(".system-tittle").click(function(){
+	$(this).addClass("add-system").siblings(".system-tittle").removeClass("add-system");
+	var dex = $(this).index()/2+1;
+	
+	sLit.eq(dex).show().siblings(".stand-list").hide();
+	hLit.eq(dex).show().siblings(".hide-list").hide();
+	
+})
+//logo点击
+$(".logo-img").click(function(){
+	sLit.eq(0).show().siblings(".stand-list").hide();
+	hLit.eq(0).show().siblings(".hide-list").hide();
+})
+
+//添加背景
+$(".stand-a").click(function(){
+	$(this).addClass("add-bg").siblings(".stand-a").removeClass("add-bg").find(".icon-sanjiao-copy").removeClass("first");
+	$(this).find(".icon-sanjiao-copy").addClass("first");
+		
+})
+
+
+$(".word-a").click(function(){
+	$(this).addClass("word-bg").siblings(".word-a").removeClass("word-bg").find(".icon-sanjiao-copy").removeClass("first");
+	$(this).find(".icon-sanjiao-copy").addClass("first");
+		
+})
+
+//
+$(".nav-a").click(function(){
+	if($(this).hasClass("nav-bg")){
+		$(".show-box").show();
+		$(".hide-box").hide();
+		$(this).removeClass("nav-bg");
+		//改变距离
+		$(".page").removeClass("c-left");
+		$(".page").width(w);
+		
+	}else{
+		$(".show-box").hide();
+		$(".hide-box").show();
+		$(this).addClass("nav-bg");
+		$(".page").addClass("c-left");
+	
+		$(".page").width(w+170);
+	}
+})
+
+
+$(".hide-icon").hover(function(){
+	$(this).children(".hide-right").show();
+	
+},function(){
+	$(this).children(".hide-right").hide();
+})
+
+
+
+//隐藏右边改变背景

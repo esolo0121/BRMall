@@ -1,0 +1,25 @@
+
+body{word-wrap:break-word;background-color: #ffffff}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,iframe{margin:0;padding:0;}
+li{list-style:none;}
+a,u,del,s{text-decoration:none;color:#000;}
+a,img,button,iframe{border:0;}
+i,em{font-style:normal;}
+b,th,strong{font-weight:normal;}
+img{vertical-align:middle;} 
+
+input,textarea,select{outline:none;}
+i,span{display: inline-block;}
+
+.cu{cursor:pointer;}
+.clear{zoom:1;}
+.clear:after{content:"";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clearx{clear:both;}
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+.fl{float:left;}
+.fr{float:right;}
+.pl_1{position:relative;top:-1px;}
+.pl_2{position:relative;top:-2px;}
+.pr{position: relative;}
+.pa{position: absolute;}

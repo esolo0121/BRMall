@@ -1,0 +1,41 @@
+/*编辑管理员*/
+.admin-edit{
+	margin: 100px 0 0 200px;
+}
+
+
+.admin-edit .layui-form-label{
+	color: #666;
+}
+.admin-edit .layui-input{
+	width: 212px;
+	padding-right: 10px;
+}
+
+
+.admin-edit .layui-btn{
+	margin: 30px 0 0 110px;
+}
+
+/*添加角色*/
+
+
+.role-add .layui-input{
+	width: 400px;
+}
+
+
+.role-add .layui-textarea{
+	width: 600px;
+	height: 200px;
+	resize: none;
+    overflow-y: auto;
+	
+}
+
+.whole-choose{
+	float: left;
+	color: #666;
+	font: 12px/20px "微软雅黑";
+	margin-right: 10px;
+}

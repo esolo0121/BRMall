@@ -1,0 +1,340 @@
+a:focus {
+	outline: none;
+}
+
+
+.admin-header{
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+	background: #C4182D;
+	position: fixed;
+}
+
+.nav-a{
+	width: 16px;
+	height: 16px;
+	background: url(../images/nave-bg.png) -5px -34px no-repeat;
+	margin-top: 24px;
+}
+
+.nav-bg{
+      background: url(../images/nave-bg.png) -5px -14px no-repeat;
+}
+
+
+.logo-img{
+	display: block;
+	vertical-align: middle;
+	margin:0px 16px 0 104px;
+	padding-top: 10px;
+	height: 40px;
+	
+		
+}
+
+.system-box{
+	overflow: hidden;
+	margin-left: 14px;
+}
+
+.system-box span{
+	float: left;
+	height: 12px;
+	width: 1px;
+	margin-top: 19px;
+	background: #d35261;
+}
+
+.system-tittle{
+	float: left;
+	font: 16px/50px "微软雅黑";
+	height: 50px;
+	padding: 0 25px;
+	color: #fff;
+	
+}
+
+.add-system{
+	background:#A71426;
+}
+
+.system-tittle:hover{
+	background: #CD3A4C;
+}
+
+.edition{
+	margin: 8px 13px 0 990px;
+}
+.edition p{
+	text-align: right;
+	color: #fff;
+	font: 13px/17px "微软雅黑";
+}
+
+
+.admin-header p{
+	text-align: right;
+	color: #fff;
+	font: 13px/17px "微软雅黑";
+	
+	
+}
+
+
+.admin-header .icon-guanliyuan{
+	float: left;
+	color: #fff;
+	font: 32px/32px "微软雅黑";
+	margin: 13px 0 0 12px;
+}
+
+
+.drop-down{
+	height: 50px;
+	padding-right: 14px;
+	border-right:1px solid #d35261 ;
+}
+
+.hide-a{
+	position: relative;
+	display:block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin-top: 18px;
+}
+
+.hide-a i{
+	position: absolute;
+	color: #fff;
+}
+
+.icon-sanjiao-copy1{
+	display: none;
+}
+
+.close-a{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	padding: 0px 10px;
+}
+.close-a:hover{
+	background: #CD3A4C;
+}
+
+.close-a i{
+	margin-top: 8px;
+	color: #fff;
+	font: 30px/30px "微软雅黑";
+}
+
+.close-a .icon-guanbi{
+	font: 28px/30px "微软雅黑";
+}
+
+/*左边第一个边框*/
+.left-first{
+	position:fixed;
+	top: 50px;
+	left: 0;
+	width: 70px;
+	height: 1000%;
+	background: #4a4647;
+}
+
+.stand-a{
+	position: relative;
+	display: block;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	color: #a7a5a5;	
+}
+
+.add-bg{
+	background: #322c2d !important;
+	color:#fff !important;
+}
+
+.stand-a:hover{
+	background: #5B5758;
+}
+
+.stand-a p{
+	font:14px/18px "微软雅黑";
+	font-weight: 700;
+}
+
+.left-first .icon-sanjiao-copy{
+	position: absolute;
+	color: #e9e7e8;
+	right: -6px;
+	top: 28px;
+	display: none;
+}
+.first{
+	display: block !important;
+}
+
+.stand-name i{
+	font:24px/24px "微软雅黑";
+	margin-top: 16px;
+}
+
+/*左边第二个边框*/
+.left-second{
+	position:fixed;
+	top: 50px;
+	left: 70px;
+	width: 140px;
+	height: 100%;
+	background: #e8e6e7;
+}
+
+
+/*调整*/
+.stand-list .icon-guanggao{
+	font: 22px/22px "微软雅黑";
+}
+
+.stand-list .icon-wenzhang{
+	font: 28px/28px "微软雅黑";
+}
+.stand-list .icon-quanxian{
+	font: 28px/28px "微软雅黑";
+}
+
+
+.stand-list .icon-shangpin{
+	font: 28px/28px "微软雅黑";
+}
+
+.stand-list .icon-dingdan{
+	font: 28px/28px "微软雅黑";
+}
+
+
+.stand-list .icon-weixin{
+	font: 28px/28px "微软雅黑";
+}
+
+
+.word-a{
+	position: relative;
+	display:block;
+	padding-left: 35px;
+	font:700 13px/36px "微软雅黑";
+	color: #777777;
+}
+
+.word-a .icon-sanjiao-copy{
+	position: absolute;
+	color: #fff;
+	top: 1px;
+	right: -6px;
+	display: none;
+}
+
+.word-a:hover{
+	background:#F4F3F3;
+}
+.word-bg{
+	color: #333333;
+	background: #dddcdc;
+}
+
+
+.hide-box{
+	position: fixed;
+    top: 50px;
+    left: 0;
+    width: 40px;
+    height: 1000%;
+    background: #4a4647;	
+	display: none;
+}
+
+
+/*隐藏栏目*/
+.hide-icon{	
+	position: relative;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font: 16px/40px "微软雅黑";
+	cursor: pointer;
+	 color: #a7a5a5;
+}
+
+
+.hide-right{
+	position: absolute;
+	top: 0px;
+	left: 41px;
+	display: none;
+}
+
+.hide-icon:hover{
+	background: #322c2d !important;
+}
+
+
+.hide-name{
+	display: block;
+	width: 90px;
+	height: 40px;
+	text-align: center;
+	font: 12px/40px "微软雅黑";
+	background: #4a4647;
+	color: #a7a5a5;
+}
+
+
+.hide-name:hover{
+	background: #5B5758;
+
+}
+
+
+/*调整2*/
+.hide-icon .icon-guanggao{
+	font: 14px/40px "微软雅黑";
+}
+
+.hide-icon .icon-wenzhang{
+	font: 18px/40px "微软雅黑";
+}
+.hide-icon .icon-quanxian{
+	font: 18px/40px "微软雅黑";
+}
+
+
+.hide-icon .icon-shangpin{
+	font: 18px/40px "微软雅黑";
+}
+
+.hide-icon .icon-dingdan{
+	font: 18px/40px "微软雅黑";
+}
+
+
+.hide-icon .icon-weixin{
+	font: 18px/40px "微软雅黑";
+}
+
+
+.page{
+	position: absolute;
+	left: 210px;
+	top: 50px;
+	width: 87%;
+	padding:18px 0 0 22px;
+	z-index: -1;
+}
+
+.c-left{
+	left:40px;
+}

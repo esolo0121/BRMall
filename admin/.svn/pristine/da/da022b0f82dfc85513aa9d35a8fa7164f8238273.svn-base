@@ -1,0 +1,143 @@
+var w = $(".page").width();
+
+var sLit = $(".stand-list");
+//隐藏列表
+var hLit = $(".hide-list");
+//左边第二个边框盒子
+var fiveBox =$(".five-box");
+$(".system-tittle").click(function() {
+	$(this).addClass("add-system").siblings(".system-tittle").removeClass("add-system");
+	var dex = $(this).index() / 2 + 1;
+
+	sLit.eq(dex).show().siblings(".stand-list").hide();
+	hLit.eq(dex).show().siblings(".hide-list").hide();
+    fiveBox.eq(dex).show().siblings(".five-box").hide();
+})
+//logo点击
+$(".logo-img").click(function() {
+	sLit.eq(0).show().siblings(".stand-list").hide();
+	hLit.eq(0).show().siblings(".hide-list").hide();
+	 fiveBox.eq(0).show().siblings(".five-box").hide();
+})
+
+//添加背景
+$(".stand-a").click(function() {
+	$(this).addClass("add-bg").siblings(".stand-a").removeClass("add-bg").find(".icon-sanjiao-copy").removeClass("first");
+	$(this).find(".icon-sanjiao-copy").addClass("first");
+    var index = $(this).index();
+    var pndex = $(this).parents(".stand-list").index();
+   
+   fiveBox.eq(pndex).find(".second-list").eq(index).show().siblings(".second-list").hide();
+    
+    
+})
+
+$(".word-a").click(function() {
+	$(this).addClass("word-bg").siblings(".word-a").removeClass("word-bg").find(".icon-sanjiao-copy").removeClass("first");
+	$(this).find(".icon-sanjiao-copy").addClass("first");
+
+})
+
+//
+$(".nav-a").click(function() {
+	if($(this).hasClass("nav-bg")) {
+		$(".show-box").show();
+		$(".hide-box").hide();
+		$(this).removeClass("nav-bg");
+		//改变距离
+		$(".page").removeClass("c-left");
+		$(".page").width(w);
+
+	} else {
+		$(".show-box").hide();
+		$(".hide-box").show();
+		$(this).addClass("nav-bg");
+		$(".page").addClass("c-left");
+		$(".page").width(w + 170);
+	}
+})
+
+$(".hide-icon").hover(function() {
+	$(this).children(".hide-right").show();
+
+}, function() {
+	$(this).children(".hide-right").hide();
+})
+
+//管理员
+$(".hide-a").click(function() {
+	$(this).find("i").stop(true).toggle();
+	$(".quick-manage").stop(true).toggle();
+})
+
+//修改密码
+
+//提示框
+var registTip = $(".regist-tip");
+
+//input输入框
+var registIn = $(".regist-in");
+
+//聚焦
+registIn.focus(function() {
+
+	$(this).parents(".in-box").siblings(".regist-tip").hide();
+})
+
+//密码失焦
+registIn.blur(function() {
+
+	var inp = $(this).val();
+	if(inp.length < 6 || inp.length > 16) {
+		$(this).parents(".in-box").siblings(".regist-tip").show().html("密码长度错误");
+	} else {
+		$(this).parents(".in-box").siblings(".regist-tip").hide();
+	}
+
+});
+
+//确认密码
+registIn.eq(2).blur(function() {
+	var inp1 = registIn.eq(1).val();
+
+	var inp2 = $(this).val();
+
+	if(inp2 != inp1) {
+		registTip.eq(2).show().html("两次密码不一致");
+	} else {
+		registTip.eq(2).hide();
+	}
+
+});
+
+$(".confirm").click(function() {
+	
+	for(var i = 0;i < 2;i++) {
+		var inp = registIn.eq(i).val();
+		if(inp.length < 6 || inp.length > 16) {
+			registIn.eq(i).parents(".in-box").siblings(".regist-tip").show().html("密码长度错误");
+		} else {
+			registIn.eq(i).parents(".in-box").siblings(".regist-tip").hide();
+		}
+	}
+	
+	
+	var inp1 = registIn.eq(1).val();
+
+	var inp2 = registIn.eq(2).val();
+
+	if(inp2 != inp1) {
+		registTip.eq(2).show().html("两次密码不一致");
+	} else {
+		registTip.eq(2).hide();
+	}
+
+})
+
+$(".cancel").click(function(){
+	$(".now-alert").hide();
+})
+
+$(".quick-tittle").find("a").click(function(){
+	$(".now-alert").show();
+})

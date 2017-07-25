@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台登录</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="../static/css/public.css" rel="stylesheet" type="text/css">		
+		<link href="../static/css/icon/iconfont.css" rel="stylesheet" type="text/css">
+		<link href="../static/layui/css/layui.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../static/css/page-all.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			
+				<div class="public-tittle">
+					<a href="supplier-list.html" class="come-back fl"><i class="iconfont icon-fanhui01"></i></a>
+					<div class="r-box fl">
+						<p>管理员-供应商管理</p>
+						<span>网站系统管理员列表</span>
+					</div>
+				</div>
+			<div class="supplier-edit">	
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">供应商名称</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title1" autocomplete="off" placeholder="请输入供应商名称" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">供应商描述</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title2" autocomplete="off" placeholder="请输入供应商描述" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">供应商联系人</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title3" autocomplete="off" placeholder="请输入供应商联系人" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">供应商电话</label>
+						<div class="layui-input-block">
+							<input type="text" name="title" lay-verify="title4" autocomplete="off" placeholder="请输入供应商电话" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-inline">
+						<label class="layui-form-label">所属管理员</label>
+						<div class="layui-input-inline">
+							<select name="modules" lay-verify="required" lay-search="">
+								<option value=""></option>
+								<option value="1">超级管理员</option>
+								<option value="2">超级管理员</option>
+								<option value="3">超级管理员</option>
+							</select>
+						</div>
+						<div class="layui-form-item supplier-btn">
+							<button class="layui-btn" lay-submit="" lay-filter="demo2">确认提交</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+
+		<script typet="text/javascript" src="../static/layui/layui.js"></script>
+		<script typet="text/javascript" src="../static/js/jquery-1.9.0.js"></script>
+		<script typet="text/javascript" src="../static/js/frame.js"></script>
+		<script>
+			layui.use(['form', 'layedit', 'laydate'], function() {
+				var form = layui.form(),
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate;
+
+				//创建一个编辑器
+				var editIndex = layedit.build('LAY_demo_editor');
+
+				//自定义验证规则
+				form.verify({
+					title1: function(value) {
+						if(value.length == 0) {
+							return '供应商名称不能为空啊';
+						}
+					},
+					title2: function(value) {
+						if(value.length == 0) {
+							return '供应商描述不能为空啊';
+						}
+					},
+					title3: function(value) {
+						if(value.length == 0) {
+							return '供应商联系人不能为空啊';
+						}
+					},
+					title4: function(value) {
+						if(value.length == 0) {
+							return '供应商电话不能为空啊';
+						}
+					},
+					
+					pass: [/(.+){6,12}$/, '密码必须6到12位'],
+					content: function(value) {
+						layedit.sync(editIndex);
+					},
+					
+					required:function(value) {
+						if(value.length == 0) {
+							return '所属管理员不能为空啊';
+						}
+					 }
+					
+				});
+
+				
+
+				//监听提交
+				form.on('submit(demo2)', function(data) {
+					layer.alert(JSON.stringify(data.field), {
+						title: '最终的提交信息',
+						title2: '最终的提交信息',
+					})
+					return false;
+				});
+
+			});
+		</script>
+	</body>
+
+</html>
